@@ -7,12 +7,12 @@ import "./App.css";
 function App(props) {
   return (
     <div className="App">
-      <ServerContainer />
+      <ServerContainer props={props} />
     </div>
   );
 }
 const mapDispatchToProps = dispatch => ({
-  dispatch // ← Add this
+  dispatch
 });
 
 export default connect(mapDispatchToProps)(App);
